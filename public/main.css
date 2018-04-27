@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.signIn {
+  width: 500px;
+  margin: 0 auto; }
+  .signIn .facebookLogin {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    margin: 5px auto;
+    background: #4267b2;
+    color: #ffffff;
+    display: inline-block;
+    cursor: pointer; }
+  .signIn .signinHeader {
+    width: 100%;
+    border-bottom: 3px solid #00ba00;
+    color: #00ba00;
+    padding: 5px; }
+  .signIn .signinFields {
+    padding: 5px; }
+    .signIn .signinFields input {
+      width: 100%;
+      padding: 5px; }
+
+.App .home .header {
+  width: 100%;
+  height: 40px;
+  background: #8FC357; }
+  .App .home .header .logout {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    float: right;
+    margin: 4px 5px;
+    padding: 5px;
+    cursor: pointer; }
+
+.App .home .searchBox {
+  width: 100%;
+  position: relative; }
+  .App .home .searchBox:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #8FC357;
+    text-align: center;
+    color: #fff;
+    font-family: 'FontAwesome';
+    content: '\f002'; }
+  .App .home .searchBox .searchTerm {
+    box-sizing: border-box;
+    width: 100%;
+    border: 5px solid #8FC357;
+    padding: 5px;
+    height: 40px;
+    outline: none; }
+  .App .home .searchBox .searchButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    cursor: pointer; }
+
+.App .home .pagination {
+  width: 100%;
+  margin: 15px 0;
+  display: flex; }
+  .App .home .pagination ul {
+    display: flex;
+    margin: 0 auto; }
+    .App .home .pagination ul li {
+      width: 35px;
+      height: 30px;
+      margin: 0 5px 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      cursor: pointer;
+      background-color: #ededed; }
+      .App .home .pagination ul li.active {
+        background-color: #8FC357;
+        color: #FFF; }
+
+.App .home .container {
+  display: flex;
+  justify-content: space-between; }
+  .App .home .container .pokemonsFilter {
+    width: 30%; }
+    .App .home .container .pokemonsFilter select {
+      width: 100%;
+      padding: 5px;
+      margin: 10px; }
+  .App .home .container .list {
+    width: 69%; }
+    .App .home .container .list .listBox {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .App .home .container .list .listBox .listItem {
+        width: 40%;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px; }
+        .App .home .container .list .listBox .listItem .name::first-letter {
+          text-transform: uppercase; }
+        .App .home .container .list .listBox .listItem img {
+          width: 100%; }
+      .App .home .container .list .listBox .loading {
+        margin: 0 auto; }
+        .App .home .container .list .listBox .loading img {
+          width: 100px;
+          height: 100px; }
